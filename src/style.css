@@ -1,0 +1,252 @@
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(34, 34, 34, 0.7);
+  --left-button-hover-color: rgba(34,34,34,0.3);
+  --right-bg-color: rgba(34, 34, 34, 0.7);
+  --right-button-hover-color: rgba(34, 34, 34, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+  background-color: rgb(44,44,44);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+ h2{
+   color: gold;
+ }
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+.logo-image{
+  position: absolute;
+  width: 50px;
+  z-index: 100;
+  border-radius: 5px;
+  top: 2%;
+  left: 3.5%;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  background: url('https://cdnassets.hw.net/3d/29/e94bc4b74df0b667342919326030/tmpc2e-2etmp-tcm138-349329.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right:0;
+  background: url('http://nebula.wsimg.com/b2b962629fa0280c4805950ce657c3ec?AccessKeyId=A3EC5AC696E3B22876D9&disposition=0&alloworigin=1') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+/* contact Us Page */
+#contact-bgk{
+  background-color: rgb(44,44,44);
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+/* h1 title */
+.contact-title{
+  font-size: 3rem;
+  color: gold;
+}
+/* input fields */
+.input-field input[type=text]:focus{
+  color: #fff;
+}
+textarea{
+  color: #fff;
+}
+input{
+  color: #fff;
+}
+/* submit btn */
+.btn{
+  width: 20%;
+  color: rgb(44,44,44);
+  font-weight: 600;
+}
+
+/* icons left on contact us page */
+
+/* footer container */
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+}
+.icon-left{
+  width: 33.33%;
+}
+.center-footer{
+  width: 33.33%;
+}
+.right-footer{
+  width: 33.33%;
+}
+.text{
+  color: gold;
+}
+/* icons */
+.fa-facebook{
+  font-size: 1.5rem;
+}
+
+/* read more page */
+.info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.button-info{
+  border: 5px solid #fff;
+  padding: 15px;
+  width: 25%;
+  text-align: center;
+  margin: 50px;
+}
+.button-info, a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.button-info:hover{
+  transition: all .3s ease-in;
+  border: 5px solid gold;
+  color: gold;
+  transform: translateX(5%);
+}
+.button-info:hover:nth-child(2){
+  transition: all .3s ease-in;
+  border: 5px solid gold;
+  color: gold;
+  transform: translateX(-5%);
+}
+/* media screen */
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .button {
+    top: 70%;
+  }
+}
+
+
