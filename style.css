@@ -1,0 +1,461 @@
+/*
+Theme: taylor's custom homes
+Developer: Michael Fazekas
+Requires: PHP
+Author: Michael Fazekas
+Version: 1.0
+tags: taylors custom homes, wordpress theme, custom wordpress theme
+*/
+
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(34, 34, 34, 0.7);
+  --left-button-hover-color: rgba(34, 34, 34, 0.3);
+  --right-bg-color: rgba(34, 34, 34, 0.7);
+  --right-button-hover-color: rgba(34, 34, 34, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 650ms;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(44, 44, 44);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border: #fff solid 0.2rem;
+  padding: 1.5rem;
+  width: 50%;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(34, 34, 34, 0.7);
+}
+h2 {
+  color: gold;
+}
+h3 {
+  color: #fff;
+}
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+  background-color: rgba(34, 34, 34, 0.7);
+}
+
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+.logo-image {
+  position: absolute;
+  width: 50px;
+  z-index: 100;
+  border-radius: 5px;
+  top: 2%;
+  left: 3.5%;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("./images/kitchen.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url("http://nebula.wsimg.com/b2b962629fa0280c4805950ce657c3ec?AccessKeyId=A3EC5AC696E3B22876D9&disposition=0&alloworigin=1")
+    center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.left,
+.split.right,
+.split.right:before,
+.split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+/* subpage title */
+.subpage-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  top: 5%;
+  font-size: 3.5rem;
+  z-index: 1;
+}
+/* contact Us Page */
+#contact-bgk {
+  background-image: url("./images/deck1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(75, 75, 75, 0.6);
+  height: 100vh;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100% !important;
+  background-color: rgba(75, 75, 75, 0.6);
+  z-index: 10;
+}
+
+/* h1 title */
+.contact-title {
+  font-size: 3rem;
+  color: gold;
+}
+
+/* input fields */
+/* label color */
+.input-field label {
+  color: rgb(255, 255, 255);
+}
+label {
+  color: rgb(255, 255, 255);
+}
+.vaildate {
+  color: rgb(255, 255, 255);
+}
+.input-field input[type="text"]:focus {
+  color: rgb(255, 255, 255);
+}
+.input-field input[type="email"]:focus {
+  color: rgb(255, 255, 255);
+}
+.input-field input[type="subject"]:focus {
+  color: rgb(255, 255, 255);
+}
+
+#first_name,
+#last_name,
+#email,
+#subject,
+#message {
+  color: rgb(255, 255, 255);
+}
+/* submit btn */
+.btn {
+  width: 20%;
+  color: rgb(44, 44, 44);
+  font-weight: 600;
+}
+
+/* icons left on contact us page */
+
+/* footer container */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.follow-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.icon-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 120px;
+}
+.left-column-stack {
+  display: flex;
+  flex-direction: column;
+}
+.icons-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.center-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 120px;
+}
+
+.right-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 120px;
+}
+.tel {
+  color: #fff;
+}
+
+.text {
+  color: rgb(247, 245, 245);
+}
+
+/* icons */
+.fa-facebook {
+  color: #3b5998;
+  font-size: 1.8rem;
+}
+
+.fa-facebook:hover {
+  color: rgba(59, 89, 152, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.fa-instagram {
+  color: rgb(237, 238, 238);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-instagram:hover {
+  color: rgba(237, 238, 238, 0.74);
+  transition: all 0.3s ease-in;
+}
+
+.fa-youtube {
+  color: rgb(255, 0, 0);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-youtube:hover {
+  color: rgba(255, 0, 0, 0.801);
+  transition: all 0.3s ease-in;
+}
+
+.fa-envelope {
+  color: rgba(59, 89, 152);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-envelope:hover {
+  color: rgba(59, 89, 152, 0.7);
+  transition: all 0.3s ease-in;
+}
+/* read more page */
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+}
+
+.button-info {
+  border: 5px solid rgb(0, 0, 0);
+  padding: 15px;
+  width: 25%;
+  text-align: center;
+  margin: 50px;
+}
+
+.button-info,
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+.button-info:hover {
+  transition: all 0.3s ease-in;
+  border: 5px solid rgb(231, 195, 0);
+  color: rgb(230, 195, 0);
+  transform: translateX(5%);
+}
+
+.button-info:hover:nth-child(2) {
+  transition: all 0.3s ease-in;
+  border: 5px solid rgb(230, 195, 0);
+  color: rgb(230, 195, 0);
+  transform: translateX(-5%);
+}
+/* info page background */
+#info-page {
+  background-image: url("images/livingroom.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.9; */
+}
+
+#remodel-page {
+  background-image: url("images/kitchen.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.8; */
+}
+video {
+  width: 800px !important;
+  height: auto;
+}
+
+/* media screen */
+/* iphone */
+@media only screen and (max-width: 414px) {
+  .split {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .button {
+    top: 50%;
+    width: 10rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 414px;
+    padding: 0;
+  }
+  video {
+    width: 400px !important;
+    height: auto;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 500px;
+  }
+  .subpage-title {
+    font-size: 1.2rem;
+    display: block;
+    position: absolute;
+    top: 5%;
+  }
+
+  .icon-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-container {
+    height: 130px;
+  }
+  .center-footer {
+    width: 100%;
+  }
+  .right-footer {
+    width: 100%;
+  }
+  .fa-facebook {
+    color: #3b5998;
+    font-size: 1.2rem;
+  }
+}
