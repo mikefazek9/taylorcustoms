@@ -449,7 +449,7 @@ a {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  height: auto;
+  height: 250px;
 }
 #remodel-process-container {
   display: flex;
@@ -485,6 +485,8 @@ a {
 .image-resize {
   width: 500px;
   height: 400px;
+  padding: 0;
+  margin: 0;
 }
 /* video {
   width: 800px !important;
