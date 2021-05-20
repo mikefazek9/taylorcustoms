@@ -78,7 +78,7 @@ p {
 .nav-menu {
   display: flex;
   width: 100%;
-  height: 50px;
+  /* height: 75px; */
   justify-content: center;
   align-items: center;
 }
@@ -419,7 +419,7 @@ a {
   color: rgba(237, 238, 238, 0.95);
 }
 .info {
-  padding: 16px;
+  padding: 40px;
 }
 .remodel-top-section {
   display: flex;
@@ -432,13 +432,59 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  padding: 16px;
 }
 /* photos on remodel page */
 .remod-photo {
   width: 500px;
   height: 500px;
+  box-shadow: 5px 5px 15px 5px rgba(237, 238, 238, 0.1);
   border-radius: 5px;
+}
+
+/* remodel process section */
+.remodel-process-section {
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: auto;
+}
+#remodel-process-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.icons-left {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  padding: 15px;
+}
+.fa-thumbs-up {
+  font-size: 2rem;
+  color: rgb(230, 195, 0);
+}
+.list-right {
+  display: flex;
+  width: 100%;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* gallery section */
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.image-resize {
+  width: 500px;
+  height: 400px;
 }
 /* video {
   width: 800px !important;
