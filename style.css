@@ -409,6 +409,7 @@ a {
 .remodel-container {
   display: flex;
   width: 90%;
+  margin: auto;
   height: auto;
   padding: 2rem;
   flex-direction: column;
