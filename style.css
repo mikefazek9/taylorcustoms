@@ -245,17 +245,6 @@ label {
 
 /* icons left on contact us page */
 
-/* footer container */
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  /* position: absolute; */
-  bottom: 0;
-  width: 100%;
-  height: 120px;
-}
 
 .follow-text {
   display: flex;
@@ -478,25 +467,232 @@ a {
   margin: 0;
 }
 
-.center-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33.33%;
-  height: 120px;
-}
 
-.right-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33.33%;
-  height: 120px;
-}
 /* video {
   width: 800px !important;
   height: auto;
 } */
+/* ***********************
+construction page layout
+******************************** */
+#construction-body{
+  background-image: url("images/livingroom.jpg");
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#new-home-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(75, 75, 75, 0.6);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+/* title box */
+.titles {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  padding: 25px;
+  top: 5%;
+  font-size: 3.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+  border: #fff solid 0.2rem;
+  padding: 1.5rem;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.7);
+}
+h3 {
+  font-size: 2rem;
+  color: rgb(252, 200, 57);
+  text-align: center;
+}
+.images {
+  max-width: 50%;
+  height: 50%;
+}
+
+ul {
+  margin: 20px;
+  padding: 5px;
+}
+li {
+  padding: 10px;
+  color: #fff;
+  font-size: 1.9rem;
+  letter-spacing: 1.5;
+}
+.fa-check {
+  color: rgb(252, 200, 57);
+}
+
+/* blueprint column */
+.bp-column {
+  display: flex;
+  flex-direction: column;
+}
+/* aproval column */
+#approval_column {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#approved_icon {
+  font-size: 3rem;
+  text-align: center;
+}
+.text {
+  font-size: 1.9rem;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1.5rem;
+}
+
+/* payments and ol */
+#contract_column {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#draw-column {
+  width: 100%;
+  text-align: center;
+}
+/* why choose */
+.TCH_column {
+  text-align: center;
+}
+
+.row_others {
+  text-align: center;
+}
+
+.fa-check-circle {
+  color: rgb(0, 197, 0);
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.fa-exclamation-circle {
+  color: rgb(199, 0, 0);
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.li_items {
+  text-align: left;
+}
+
+/* footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 7.8rem;
+  background-color: rgb(255, 255, 255);
+  margin:0;
+  width: 100%;
+  align-items: center;
+}
+.follow-text {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.icon-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  font-size: 1.8rem;
+}
+
+.fa-facebook:hover {
+  color: rgba(59, 89, 152, 0.5);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  color: rgb(151, 53, 243);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-instagram:hover {
+  color: rgb(151, 53, 243, 0.5);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.fa-youtube {
+  color: rgb(255, 0, 0);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-youtube:hover {
+  color: rgba(255, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.fa-envelope {
+  color: rgba(59, 89, 152);
+  font-size: 1.8rem;
+  margin: 5px;
+}
+
+.fa-envelope:hover {
+  color: rgba(59, 89, 152, 0.5);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.center-footer {
+  margin: 0 3rem 0 3rem;
+  /* width: 20%; */
+}
+.tel {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+.tel:hover{
+  color: rgba(0,0,0, 0.5);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.logo-footer-image {
+  width: 200px;
+}
 
 /* media screen */
 /* iphone */
@@ -517,13 +713,6 @@ a {
     width: 10rem;
   }
 
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 414px;
-    padding: 0;
-  }
   video {
     width: 400px !important;
     height: auto;
@@ -540,15 +729,7 @@ a {
     flex-direction: column;
     width: 100%;
   }
-  .footer-container {
-    height: 130px;
-  }
-  .center-footer {
-    width: 100%;
-  }
-  .right-footer {
-    width: 100%;
-  }
+  
   .fa-facebook {
     color: #3b5998;
     font-size: 1.2rem;
@@ -615,4 +796,50 @@ a {
   .image-resize {
     width: 100%;
   }
+  .subpage-title{
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+}
+/* construction page */
+#new-home-section{
+    width: 100%;
+}
+.titles{
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+li{
+    font-size: 1rem;
+}
+
+.text{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+.icon-left{
+    flex-wrap: wrap;
+}
+.tel{
+    font-size: 1rem;
+}
+.logo-image{
+    width: 100px;
+}
+
+/* footer all pages */
+.footer-container{
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
