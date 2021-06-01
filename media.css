@@ -1,0 +1,38 @@
+@media only screen and (max-width: 375px) {
+    .subpage-title{
+        width: 90%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    #new-home-section{
+        width: 100%;
+    }
+    .titles{
+        font-size: 2rem !important;
+    }
+    .row{
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+    }
+    li{
+        font-size: 1rem !important;
+    }
+
+    .text{
+        font-size: 1rem !important;
+    }
+    h3{
+        font-size: 1rem !important;
+    }
+
+    .icon-left{
+        flex-wrap: wrap;
+    }
+    .tel{
+        font-size: 1rem !important;
+    }
+    .logo-image{
+        width: 100px !important;
+    }
+  }

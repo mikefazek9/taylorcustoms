@@ -20,31 +20,148 @@
       src="https://kit.fontawesome.com/83c4326dda.js"
       crossorigin="anonymous"
     ></script>
+    <!-- media query -->
+    <link rel="stylesheet" href="media.css">
     <!-- external stylesheet css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="newhome.css" />
   </head>
-  <body id="info-page">
+  <body>
     <h1 class="subpage-title">New Home Construction</h1>
-    <div class="info-container">
-      <a href="../index.html">
+    <div id="new-home-section">
+      <h2 class="titles">Our Custom Home Process</h2>
+      <div class="row">
         <img
-          src="../images/tcLogoTitleBar.png"
-          alt="Taylor's Custom Homes"
-          class="logo-image"
-      /></a>
-      <video width="auto" height="auto" controls>
-        <source
-          src="video/Our Custom Home Building Process.mp4"
-          type="video/mp4"
+          src="../images/home.jpg"
+          alt="TCH Custom Built Home"
+          class="images"
         />
-      </video>
+        <ul>
+          <li><i class="fas fa-check"></i> Pre-approval</li>
+          <li>
+            <i class="fas fa-check"></i> Pre-approval from a lender to have an
+            idea what your budget will be for your newly built home.
+          </li>
+          <li><i class="fas fa-check"></i> Find Land</li>
+          <li>
+            <i class="fas fa-check"></i> Once you've closed on your loan taylor
+            custom homes will start on the construction phase
+          </li>
+        </ul>
+      </div>
+      <!-- / new home processes -->
+      <!-- blueprints section -->
+      <div class="bp-column">
+        <h2 class="titles">Blueprints</h2>
+        <div class="row">
+          <p class="text">
+            you can source online blueprints or let us know if you need a
+            architect, TCH has approved architects that can draw your blueprints
+            from scratch. if you find blueprints online but it's not exactly
+            what you want our architects can use that as a starting point. All
+            plans will be reviewed by TCH and approved by the home owner, TCH
+            and the architect.
+          </p>
+          <img
+            src="../images/blueprints1.jpg"
+            alt="blueprint image unsplash.com"
+            class="images"
+          />
+        </div>
+      </div>
+      <!-- blueprints end -->
+      <!-- after aproval -->
+      <div id="approval_column">
+        <h2 class="titles">When Approved</h2>
+        <i class="fas fa-check" id="approved_icon"></i>
+        <div class="row">
+          <p class="text">
+            TCH will estimate the cost of your build. build fee is $1 per square
+            foot, this fee will be removed once the contract as been executed.
+            the builder fee starts at 15% of material and labor to build your
+            home from start to finish. Example: labor $50,000 + $50,000 for
+            material = $100,000 x $0.15 = $15,000 builders fee. the builders fee
+            does not change unless there are change orders made. change order
+            fees have an additional builders fee of %30.
+          </p>
+        </div>
+      </div>
+      <!-- contract excution -->
+      <div id="contract_column">
+        <h3 class="titles">Payments</h3>
+        <div class="row">
+          <img src="../images/contract.jpg" alt="Contract" class="images" />
+          <p class="text">
+            After the contract executions (finalized) construction will begin,
+            TCH will be due the 1st of 5 draws (payments) at contract signing
+          </p>
+        </div>
+        <div id="draw-column">
+          <h3 class="titles">Draws Timeline</h3>
+          <ul class="draws">
+            <li>1. At execution of contract</li>
+            <li>2. After Foundation is complete</li>
+            <li>3. After Home has been framed and blacked in</li>
+            <li>4. After Trim is complete</li>
+            <li>5. When Home is finished</li>
+          </ul>
+        </div>
+      </div>
+      <!-- why choose -->
+      <div id="TCH-column">
+        <h2 class="titles">Why Choose TCH?</h2>
+        <h3>Taylor Custom Homes VS Other Contractors</h3>
+        <div class="row">
+          <div class="TCH_column">
+            <ul>
+              <li class="li_items">
+                <i class="fas fa-check-circle"></i> You Control the funds
+              </li>
+              <li class="li_items">
+                <i class="fas fa-check-circle"></i> We Don't take possssion of
+                your home
+              </li>
+              <li class="li_items">
+                <i class="fas fa-check-circle"></i>
+                we meet with you to review invoices, you write the checks, you
+                have more control and transparency
+              </li>
+              <li class="li_items">
+                <i class="fas fa-check-circle"></i>
+                We use quality materials, to make sure your newly built home
+                will last for years to come
+              </li>
+            </ul>
+          </div>
+          <div class="row_others">
+            <ul>
+              <li class="li_items">
+                <i class="fas fa-exclamation-circle"></i> You put funds in their
+                hands
+              </li>
+              <li class="li_items">
+                <i class="fas fa-exclamation-circle"></i>They take possession of
+                your home until it is complete
+              </li>
+              <li class="li_items">
+                <i class="fas fa-exclamation-circle"></i>They are responsable
+                for paying sub contractor and vendors, if they don't pay leans
+                can go against your home
+              </li>
+              <li class="li_items">
+                <i class="fas fa-exclamation-circle"></i>they charge turn key
+                prices and source lowest grade material and subcontractor to max
+                their profits
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
     <!-- footer section -->
     <footer class="footer-container">
+      <h3 class="follow-text">Contact Us!</h3>
       <div class="icon-left">
         <div class="left-column-stack">
-          <h3 class="follow-text">Contact Us!</h3>
           <div class="icons-row">
             <a href="https://www.facebook.com/taylorscustomhomes"
               ><i class="fab fa-facebook"></i
@@ -55,15 +172,15 @@
             <a href="https://www.youtube.com/channel/UCHZutVM_9vMJhne68eWMlpg"
               ><i class="fab fa-youtube"></i
             ></a>
-            <a href="form.php"><i class="far fa-envelope"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
           </div>
         </div>
-      </div>
-      <div class="center-footer">
-        <span class="company-name text">Taylor's Custom Homes &#169; 2021</span>
-      </div>
-      <div class="right-footer">
-        <a href="tel:205-705-2588" class="tel">(205) 705-2588</a>
+        <div class="center-footer">
+          <img src="../images/logo2.jpeg" alt="logo2" class="logo-image"/>
+        </div>
+        <div class="right-footer">
+          <a href="tel:205-705-2588" class="tel">(205)-705-2588</a>
+        </div>
       </div>
     </footer>
   </body>
